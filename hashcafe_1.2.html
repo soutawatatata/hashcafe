@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hash Cafe</title>
+</head>
+
+<body>
+  <div style=" background: linear-gradient(#CD853F, #FFE4B5);; height:800px;">
+    <header >
+      <h2 style="color: black; background-color:#F5DEB3; height:70px; padding-top:10px; font-size:40px;
+       border:4px solid #CD853F;text-align:center;">
+        <img src="img/logo.png" alt="image" style="width: 29px; height: 29px;">
+        Hash Coffee</h2>
+    </header>
+
+      <div style="font-size:20px;">
+        <h3 style="padding-left:20px;">Please touch to buy</h3>
+      </div>
+
+      <div float="left" padding-left="30px;">
+
+        <form method="POST" action="https://pay-testnet.hashhub.me/apps/xamAQqoDBUBJvT7E1iMA6ps9fCh/pos" >
+          <input type="hidden" name="email" value="customer@example.com" />
+          <input type="hidden" name="orderId" value="CustomOrderId" />
+          <input type="hidden" name="notificationUrl" value="https://maker.ifttt.com/trigger/button/with/key/EDazhE5x4LtwHxKtIbSO2" />
+          <input type="hidden" name="redirectUrl" value="https://example.com/thanksyou" />
+          <button type="submit" name="choiceKey" value="tea" >
+            <img src="img/coffee.jpg" alt="image" style="width: 160px; height: 150px; ">
+          </button>
+
+          <form method="POST" action="https://pay-testnet.hashhub.me/apps/xamAQqoDBUBJvT7E1iMA6ps9fCh/pos">
+            <input type="hidden" name="email" value="customer@example.com" />
+            <input type="hidden" name="orderId" value="CustomOrderId" />
+            <input type="hidden" name="notificationUrl" value="https://maker.ifttt.com/trigger/button/with/key/EDazhE5x4LtwHxKtIbSO2" />
+            <input type="hidden" name="redirectUrl" value="https://example.com/thanksyou" />
+            <button type="submit" name="choiceKey" value="tea">
+              <img src="img/coffee2.jpg" alt="image" style="width: 160px; height: 150px;">
+            </button>
+
+
+    </div>
+
+    <div style="padding:10px 50px; ">
+    <h5 style="font-size:18px; ">Lightning Coffeは、Lightning Networkというビットコイン特有のスケーリング技術を用いて即時決済を実現しています。<br>
+      　<br>※決済はビットコインのみ対応となっています。ビットコインと仮想通貨ウォレットをお持ちでない方は、申し訳ありませんが、ご購入することができません。</h5>
+   </div>
+
+  </div>
+  <footer>
+    <img src="img/mame.jpg" alt="image" height="170px" width="610px"  style="border:7px solid #FFE4B5; opacity:0.8;">
+  </footer>
+</body>
+
+</html>

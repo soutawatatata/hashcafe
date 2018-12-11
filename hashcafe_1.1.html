@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hash Cafe</title>
+</head>
+
+<body style="animation: fadeIn 2s ease 0s 1 normal;">
+  <div style=" background: #FFE4B5 ; height:750px; top:0px; box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.2) inset;">
+    <!--ヘッダー-->
+    <header>
+      <h2 style="color:#20B2AA; background:#FDF5E6; height:70px; padding-top:10px;margin-top:0px; margin-bottom:10px; font-size:43px;
+      text-shadow: 1px 1px 0 #FFFFFF;  text-align:center; font-family:Avenir;　box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);-webkit-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+      -moz-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6); ">
+        <img src="img/logo.png" alt="image" style="width: 29px; height: 29px;">
+        Hash Cafe</h2>
+    </header>
+
+    <!--上記説明文-->
+    <div style="font-size:13px; padding-top:5px;  ">
+      <h3 style="margin-left:10px; padding-left:15px; display:inline-block;  margin:0 auto;">
+        Please tap the image to buy the coffee, and BTCPAY's QRcode will be displayed.<br>
+        But if you treat other people to a couple of coffee, tap the image to buy after setting name and extra number.
+    </h3>
+    </div>
+
+    <!--Lightning Coffeeって単語-->
+    <h5 style="text-align:center; font-size:19px; text-shadow: 1px 1px 0 #000; color:#FFFF44; margin:10px auto; padding-top: 10px; font-family:GungsuhChe;">
+      Lightning Coffee  </h5>
+
+    <div style="text-align:center; margin:10px auto;">
+
+      <!--画像-->
+      <form method="POST" action="https://pay-testnet.hashhub.me/apps/xamAQqoDBUBJvT7E1iMA6ps9fCh/pos">
+        <input type="hidden" name="email" value="customer@example.com" />
+        <input type="hidden" name="orderId" value="CustomOrderId" />
+        <input type="hidden" name="notificationUrl" value="https://maker.ifttt.com/trigger/button/with/key/EDazhE5x4LtwHxKtIbSO2" />
+        <input type="hidden" name="redirectUrl" value="https://example.com/thanksyou" />
+        <button type="submit" name="choiceKey" value="tea" style="box-shadow:0px 3px 3px rgba(0, 0, 0, 0.8); padding:0 0; border:0 0;">
+          <img src="img/coffee3.jpg" alt="image" style="width:150px; height: 150px;">
+        </button>
+    </div>
+
+<div class="" style="text-align:center; font-family:GungsuhChe;">
+    <form class="" action="index.html" method="post" style="text-align:center;">
+      Name <input type="text" name="" value="" >
+      Number <input type="number" name="個" value="number" min="0" max="5">
+    </form>
+    </div>
+
+    <h5 style="text-align:center; margin:40px 30px;">
+      <a href="#" class="square_btn"
+    style="
+    height: 25px;
+    width: 330px;
+    font-size: 17px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 10px #20B2AA;/*左線*/
+    color: #20B2AA;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.29);
+    ">A cup of coffee by 〇〇×1</a></h5>
+
+    <!--下記説明文-->
+    <div style="padding:5px 30px;">
+      <h5 style="background-color: #F8F8FF; padding:15px 15px;font-size:12px; margin-top:5px; box-shadow:0px 0px 5px; ">
+        HashCafe realized immediate settlement by utilizing Lightning Network that scailing solution is unique to Bitcoin.<br>
+        　<br>※For purchase, Bitcoin and Wallet are necessary.</h5>
+    </div>
+
+  </div>
+  <footer>
+  </footer>
+</body>
+
+</html>
